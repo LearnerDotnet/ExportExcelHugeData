@@ -1,0 +1,10 @@
+        public string MailBody(string name)
+        {
+            StringBuilder html = new StringBuilder();
+            html.Append("<b>Hello " + name + ",</b>");
+            html.Append("<br/><br/><b>As requested, we're sending your username and password.</b> Use the information below to sign in to your account.");
+            html.Append("<br/>To login, <a href='"+Server.MapPath()+"'>Click here</a>");
+            html.Append("<br/><br/>With Regards,");
+            html.Append("<br/> Wesbtire");
+            html.Append("<br/><br/><div style='font-size:11px'><b>Important : </b>This is an automatically generated e-mail. Please do not reply back to this message.");
+        }
